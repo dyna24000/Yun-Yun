@@ -1,0 +1,62 @@
+html {
+    font-size: 18px;
+    height: 100%;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    text-align: center; /* Center text within the body */
+}
+
+img {
+    border-radius: 14px;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0.5em auto; /* Using auto for left and right margins to center the element */
+    max-width: 90%; /* Optional: limit the width for better readability */
+    text-align: justify; /* Justify the text within the element */
+}
+
+footer {
+    background-color: #141414; /* Dark background for the footer */
+    color: white;
+    padding: 1em 0; /* Padding for top and bottom */
+    text-align: center; /* Center text within the footer */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space out the footer content */
+    max-width: 90%; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the footer container */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1; /* Equal width for each section */
+    padding: 0 1em; /* Padding for left and right */
+}
+
+.footer-left {
+    text-align: left; /* Align text to the left */
+}
+
+.footer-center {
+    text-align: center; /* Align text to the center */
+}
+
+.footer-right {
+    text-align: right; /* Align text to the right */
+}
