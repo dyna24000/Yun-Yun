@@ -12,16 +12,31 @@
         ប្រយុទ្ធទៅកាន់មេឃា (斗破苍穹) - Yun Yun (អ៊ីន អ៊ីន / 云韵)
     </header>
     <div class="main-content">
-        <aside class="sidebar">
-            <img src="Yuner.jpg" alt="Yun Yun" style="width:100%; height:auto;">
-            <h2>អ៊ីន អ៊ីន (云韵)</h2>
-            <ul style="list-style:none; padding:0; font-size:1em;">
-                <li><strong>ភេទ:</strong> ស្រី</li>
-                <li><strong>ស្ថានភាព:</strong> មេដឹកនាំបក្សពពកអ័ព្ទ</li>
-                <li><strong>សញ្ជាតិ:</strong> ចិន</li>
-                <li><strong>អក្សរចិន:</strong> 云韵</li>
-                <li><strong>Romanization:</strong> Yún Yùn</li>
+        <aside class="sidebar infobox">
+            <img src="Yunyun.webp" alt="Yun Yun" class="infobox-img">
+            <h2 style="text-align:center; font-size:1.3em; margin-bottom:0.5em;">Yun Yun<br><span style="font-size:0.9em;">(云韵)</span></h2>
+            <div style="text-align:center; margin-bottom:0.5em;">
+                <b>Anime</b>, <b>Novel</b>, <b>Manhua</b>
+            </div>
+            <ul>
+                <li><strong>Romaji:</strong> Yún Yùn</li>
+                <li><strong>Alias:</strong> Yun Zhi, Yun Jun, Yun'Er, Little Yun-er, Teacher</li>
+                <li><strong>Race:</strong> Human</li>
+                <li><strong>Gender:</strong> Female</li>
+                <li><strong>Age:</strong> 20s (estimated)</li>
+                <li><strong>Status:</strong> Alive</li>
+                <li><strong>Affiliation:</strong> Misty Cloud Sect (Leader), Flower Sect (Elder)</li>
+                <li><strong>Occupation:</strong> Sect Leader, Elder</li>
+                <li><strong>Family:</strong> None known</li>
+                <li><strong>Debut:</strong> Novel Chapter 137, Anime Episode 21</li>
             </ul>
+            <hr>
+            <div style="font-size:0.95em;">
+                <b>Chinese Name:</b> 云韵<br>
+                <b>Romaji:</b> Yún Yùn<br>
+                <b>Also Known As:</b> Yun Zhi, Yun Jun, Yun'Er, Little Yun-er, Teacher<br>
+                <b>Affiliations:</b> Misty Cloud Sect, Flower Sect
+            </div>
         </aside>
         <section>
             <h1>អ៊ីន អ៊ីន (云韵)</h1>
@@ -61,5 +76,26 @@
         <div class="footer-right">ទាក់ទងមកពួកយើង</div>
     </div>
 </footer>
+    <!-- Script to insert images before every h3 -->
+    <script>
+    // List all your image filenames here
+    const imageFiles = [
+        "Yunyun.webp",
+        "Yuner.jpg",
+        "Yuner2.jpg",
+        "Yuner3.jpg",
+        // Add more if you have more images
+    ];
+    document.addEventListener("DOMContentLoaded", function() {
+        const h3s = document.querySelectorAll('section h3');
+        h3s.forEach((h3, idx) => {
+            const img = document.createElement('img');
+            img.src = imageFiles[idx % imageFiles.length];
+            img.alt = "Yun Yun";
+            img.className = "h3-section-img";
+            h3.parentNode.insertBefore(img, h3);
+        });
+    });
+    </script>
 </body>
 </html>

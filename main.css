@@ -21,6 +21,48 @@ header {
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
 }
 
+/* Top bar */
+.top-bar {
+    background: #232a35;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #ffc500;
+}
+.top-bar-title {
+    font-weight: bold;
+}
+
+/* Infobox styles */
+.infobox {
+    background: #f8f9fa;
+    border: 2px solid #a2a9b1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    padding: 1.5em 1em;
+    margin: 2em 0;
+    max-width: 270px;
+    float: right;
+    font-size: 1rem;
+}
+.infobox-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+}
+.infobox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.infobox li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
 /* Main content area */
 .main-content {
     background: #fff;
@@ -29,6 +71,7 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
     padding: 2em 2.5em;
+    border: 1px solid #a2a9b1;
 }
 
 /* Headings */
@@ -54,6 +97,16 @@ img {
     margin: 1.5em auto;
     max-width: 100%;
     box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+}
+
+/* Images before h3 */
+.h3-section-img {
+    display: block;
+    margin: 1.2em auto 0.5em auto;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.10);
 }
 
 /* Links */
@@ -97,9 +150,12 @@ footer {
         padding: 1em;
         max-width: 98vw;
     }
-    .sidebar {
+    .sidebar, .infobox {
         float: none;
         max-width: 100%;
         margin: 1em 0;
+    }
+    .h3-section-img {
+        max-width: 100%;
     }
 }
