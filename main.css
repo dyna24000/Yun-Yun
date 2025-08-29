@@ -36,21 +36,26 @@ header {
 }
 
 /* Infobox styles */
-.infobox {
+.infobox, .sidebar {
     background: #f8f9fa;
+    border: 2px solid #a2a9b1;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
     padding: 1.5em 1em;
     margin: 2em 0;
     max-width: 270px;
     float: right;
     font-size: 1rem;
 }
+
 .infobox-img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 1em;
     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    border: 1px solid #a2a9b1;
 }
+
 .infobox ul {
     list-style: none;
     padding: 0;
@@ -59,6 +64,29 @@ header {
 .infobox li {
     margin-bottom: 0.5em;
     font-size: 1em;
+}
+
+.infobox table {
+    width: 100%;
+    font-size: 1em;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+.infobox td {
+    padding: 0.3em 0.5em;
+    border-bottom: 1px solid #e0e4ea;
+}
+.infobox tr:last-child td {
+    border-bottom: none;
+}
+.infobox td:first-child {
+    font-weight: bold;
+    color: #2d3a5c;
+    width: 40%;
+}
+.infobox td:last-child {
+    color: #222;
+    width: 60%;
 }
 
 /* Main content area */
@@ -79,6 +107,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.2em;
     margin-bottom: 0.5em;
     text-align: left;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #2d3a5c;
+    border-bottom: 2px solid #e0e4ea;
+    padding-bottom: 0.2em;
 }
 
 p {
