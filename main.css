@@ -271,3 +271,66 @@ footer {
     .infobox, .sidebar { float: none; max-width: 100%; margin: 1em 0; }
     .gallery { flex-direction: column; align-items: center; }
 }
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background: linear-gradient(180deg, #181c23 0%, #232a35 100%);
+        color: #e6eaf3;
+    }
+    .main-content {
+        background: #232a35;
+        border: 1px solid #444b5c;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    }
+    .hero-section {
+        background: url('Yunyun_background.jpeg') center/cover no-repeat, linear-gradient(180deg, #232a35 0%, #181c23 100%);
+    }
+    .hero-overlay {
+        background: rgba(20, 24, 32, 0.65);
+    }
+    .hero-content,
+    .hero-title,
+    .hero-subtitle {
+        color: #fff;
+    }
+    .hero-btn {
+        background: #ffc500;
+        color: #232a35;
+    }
+    .hero-btn:hover {
+        background: #ffe066;
+    }
+    .top-bar,
+    header,
+    footer {
+        background: #181c23;
+        color: #e6eaf3;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .infobox, .sidebar {
+        background: #232a35;
+        color: #e6eaf3;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        border: 1px solid #444b5c;
+    }
+    .infobox td:first-child {
+        color: #ffc500;
+    }
+    .infobox td:last-child {
+        color: #e6eaf3;
+    }
+    .gallery img,
+    .infobox-img,
+    img,
+    .h3-section-img {
+        box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+        border: 1px solid #444b5c;
+    }
+    a {
+        color: #ffd700;
+    }
+    a:hover {
+        color: #fffbe6;
+    }
+}
