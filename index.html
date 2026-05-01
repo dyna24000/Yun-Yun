@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="km", lang="en", lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <div class="page-shell">
+    <div class="page-shell ">
         <header class="topbar">
             <div class="brand">
                 <span class="brand-tag">BTTH</span>
@@ -36,8 +36,8 @@
                         <div class="stats-grid">
                             <div class="stat-card">
                                 <span class="stat-label">Power Level</span>
-                                <strong>អធិរាជប្រយុទ្ធ (ពីមុន)
-                                    <br>តូវហ្ស៊ុន ផ្កាយ៩ (បច្ចុប្បន្ន)
+                                <strong>តូវហ័ង (ពីមុន)
+                                    <br><br>តូវហ្ស៊ុន ផ្កាយ៩
                                 </strong>
                             </div>
                             <div class="stat-card">
@@ -58,8 +58,169 @@
                     </div>
 
                     <div class="hero-image">
-                        <img src="Yuner.png" alt="Yun Yun" class="character-img">
+                        <img src="image/yunzhi (9).jpg" alt="Yun Yun" class="character-img">
                         <div class="hero-glow"></div>
+                    </div>
+                </div>
+
+                <div class="tabs-section">
+                    <div class="tabs-container">
+                        <button class="tab-btn active" onclick="switchTab(event, 'overview')">Overview</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'relationships')">Relationships</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'abilities')">Abilities</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'cultivation')">Cultivation</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'quotes')">Quotes</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'gallery')">Gallery</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'bonus')">Bonus</button>
+                    </div>
+
+                    <div id="overview" class="tab-content active">
+                        <h3>Overview</h3>
+                        <p>អ៊ីន អ៊ីន គឺជាតួអង្គដ៏សំខាន់ម្នាក់នៅក្នុងរឿង ប្រយុទ្ធទៅកាន់មេឃា។ នាងគឺជាអ្នកដឹកនាំបក្សពពកអ័ព្ទ ហើយក្រោយមកក្លាយជាមេបក្សផ្កា។ នាងជាអ្នកហាត់គុណខ្លាំង​ពូកែ និងស្រស់ស្អាតម្នាក់ ដែលមានចរិតម៉ឺងម៉ាត់ និងម៉ត់ចត់ ហើយមានទំនួលខុសត្រូវខ្ពស់។</p>
+                    </div>
+
+                    <div id="relationships" class="tab-content">
+                        <h3>Relationships</h3>
+                        <h4>Yun Shan (យុនសាន)</h4>
+                        <p>គាត់គឺជាគ្រូរបស់ Yun Yun រហូតដល់ពេលដែលគាត់បានសម្រេចចិត្តរួមដៃជាមួយពួក "វិមានព្រលឹង" (Hall of Souls)។ នៅទីបំផុត គាត់បានបិទខ្ទប់ថាមពល (Qi) របស់ Yun Yun និងព្យាយាមបង្ខំនាងឱ្យរៀបការជាមួយ Gu He។ ជាសំណាងល្អ Xiao Yan បានបង្ហាញខ្លួនទាន់ពេលវេលា ហើយបានបញ្ឈប់មង្គលការនោះ។</p>
+                        <h4>Nalan Yanran (ណឡាន យ៉ានរ៉ាន់)</h4>
+                        <p>នាងគឺជាកូនសិស្សរបស់ Yun Yun។ Yun Yun គឺជាអ្នកដែលបានអនុញ្ញាតឱ្យ Nalan ទៅកាន់ត្រកូល Xiao ដើម្បីលុបចោលកិច្ចសន្យាដណ្តឹងជាមួយ Xiao Yan។ ទង្វើមួយនេះហើយដែលជាដើមហេតុបង្កឱ្យមានការប៉ះទង្គិចគ្នាយ៉ាងខ្លាំងរវាង Xiao Yan និង "បក្សពពកអ័ព្ទ" (Misty Cloud Sect)។ Nalan នៅតែបន្តតាមបម្រើគ្រូរបស់នាងជានិច្ច ទោះបីជា Yun Yun ចាកចេញពីអាណាចក្រ Jia Ma ទៅចូលរួមជាមួយ "បក្សបុប្ផា" (Flower Sect) ក៏ដោយ។</p>
+                        <h4>Xiao Yan (សៀវ យាន)</h4>
+                        <p>គឺជាបុរសដំបូងគេដែលបានឆក់យក "ថើបដំបូង" របស់ Yun Yun ដែលធ្វើឱ្យទំនាក់ទំនងរបស់ពួកគេកាន់តែស្មុគស្មាញឡើងពីមួយថ្ងៃទៅមួយថ្ងៃ។ បក្សពពកអ័ព្ទរបស់នាង និង Xiao Yan គឺជាសត្រូវស៊ីសាច់ហុតឈាមនឹងគ្នា ហើយ Xiao Yan ថែមទាំងបានសម្លាប់ Yun Shan ដែលជាគ្រូរបស់នាងទៀតផង។</p>
+                    </div>
+
+                    <div id="abilities" class="tab-content">
+                        <h3>Abilities</h3>
+                        <p>នាងមានសមត្ថភាពប្រើប្រាស់ស្នៀតផ្សេងៗដូចជាស្នៀត ស្រមោលខ្យល់ពិឃាត...។</p>
+                    </div>
+
+                    <div id="cultivation" class="tab-content">
+                        <h3>Cultivation Path</h3>
+                        <p>នាងស្ថិតនៅកម្រិត អធិរាជប្រយុទ្ធ ផ្កាយ៣ នៅពេលបង្ហាញខ្លួនដំបូង។ ក្រោយមកក៏បានឡើងទៅដល់កម្រិត តូវហ្ស៊ុន ផ្កាយ៩ នៅពេលដែលស្រូបយកកម្លាំងធាតុដែល លោកយាយហួា បានផ្ទេរឱ្យមុនស្លាប់បានទាំងស្រុង។</p>
+                    </div>
+
+                    <div id="quotes" class="tab-content">
+                        <h3>Notable Quotes</h3>
+                        <p>"តើវាអាចទៅរួចយ៉ាងម៉េចដែលវាជាកម្រិតទាបបំផុតនៃវិជ្ជាផ្ដុំកម្លាំងធាតុ? គ្រូរបស់បុរសម្នាក់នេះហាក់ដូចជាមនុស្សកំណាញ់ខ្លាំងណាស់ ឬមួយក៏គាត់មិនដឹងថាវិជ្ជាផ្ដុំកម្លាំងធាតុល្អមានសារៈសំខាន់សម្រាប់អ្នកហាត់ដំបូងកម្រិតណាទេ?" - អ៊ីន អ៊ីន និយាយបន្ទាប់ពីបានឃើញវិជ្ជាផ្ដុំកម្លាំងធាតុដ៏អន់របស់ សៀវ យាន<br><br>"អាយុនៅក្មេងសោះ តែបែរជាកាចសាហាវម្ល៉េះពេលខឹង គិតទៅខ្ញុំខំមានបំណងចង់ជួយឯង។ ប៉ុន្តែបើឯងចូលចិត្តធ្វើជាអ្នកក្លាហាន និងចង់បង្អួតអំនួតបែបនេះ ឯងដោះស្រាយវាដោយខ្លួនឯងទៅ" - អ៊ីន អ៊ីន និយាយបន្ទាប់ពីត្រូវ សៀវ យាន ស្រែកដាក់<br><br>"បន្ទាប់ពីហ្វឹកហាត់ម្នាក់ឯងអស់ជាច្រើនឆ្នាំមក ខ្ញុំមិននឹកស្មានថា... ក្មេងប្រុសម្នាក់នេះ..." - អ៊ីន អ៊ីន និយាយទៅកាន់ខ្លួនឯងអំពីការចាប់ចិត្តលើ សៀវ យាន<br><br>"យ៉ាវ យាន បើសិនជាខ្ញុំបាត់បង់ភាពបរិសុទ្ធទៅឯង ខ្ញុំនឹងសម្លាប់ឯងមុន រួចសម្លាប់ខ្លួនឯងតាមក្រោយ!" - អ៊ីន អ៊ីន និយាយទៅកាន់ សៀវ យាន<br><br>"ទោះជាយ៉ាងណា ក្នុងពេលដែលឯងបានចាកចេញទៅហើយ អ៊ីន ជឺ ដែលធ្លាប់រំភើបដោយសារឯងនឹងរលាយបាត់ទៅជារៀងរហូត។ ចាប់ពីពេលនេះទៅ ខ្ញុំនឹងជាមេបក្សពពកអ័ព្ទ អ៊ីណ អ៊ីន។ មនោសញ្ចេតនាផ្ទាល់ខ្លួនទាំងនេះ ដើមឡើយមិនគួរជារបស់ខ្ញុំឡើយ។ ចាត់ទុកថាពេលនេះ ជាការធ្វើតាមចិត្តខ្លួនឯងម្ដងជាលើកចុងក្រោយទៅចុះ" - អ៊ីន អ៊ីន សម្លឹងមើល សៀវ យាន ដែលចាកចេញពីអាណាចក្រជៀម៉ា<br><br>"អាល្អិត ឯងពិតជាធំដឹងក្តីហើយ។ ឥឡូវនេះនៅពេលដែលបក្សពពកអ័ព្ទបានក្លាយជាបែបនេះទៅហើយ ខ្ញុំក៏ចង់ចេញទៅដើរលេងមើលពិភពលោកខាងក្រៅខ្លះដែរ។ ប្រហែលជាខ្ញុំនឹងត្រឡប់មកវិញ នៅពេលដែលខ្ញុំអាចដោះស្រាយរឿងរ៉ាវក្នុងចិត្តបាន។ នៅពេលនោះ ខ្ញុំប្រហែលជានឹងមិនបដិសេធឡើយ ប្រសិនបើឯងនៅតែចង់ឱ្យខ្ញុំនៅក្បែរដើម្បីជួយឯង" - អ៊ីន អ៊ីន និយាយទៅកាន់ សៀវ យាន មុនពេលលាគ្នា<br><br>"ពេលខ្លះ ខ្ញុំគិតថាប្រសិនបើឯងមានភាពក្លាហានជាងនេះបន្តិច កាលនៅក្នុងរូងភ្នំនាពេលនោះ ហើយមិនខ្វល់ពីការគំរាមកំហែងរបស់ខ្ញុំ ពេលនេះប្រហែលជា..." - អ៊ីន អ៊ីន និយាយទៅកាន់ សៀវ យាន</p>
+                    </div>
+
+                    <div id="gallery" class="tab-content">
+                        <h3>Gallery</h3>
+                        <p>សូមអញ្ជើញមកមើលរូបភាពពិសេសៗរបស់ អ៊ីន អ៊ីន។</p>
+
+                        <div class="gallery-grid">
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (10).jpg" alt="Yun Yun Mystique">
+                                <div class="gallery-caption">
+                                    <strong>First Encounter</strong>
+                                    <span>Ancient power awakens from within.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (11).jpg" alt="Yun Yun Splendor">
+                                <div class="gallery-caption">
+                                    <strong>In The Cave</strong>
+                                    <span>Grace meeting legendary strength.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (16).jpg" alt="Yun Yun Legacy">
+                                <div class="gallery-caption">
+                                    <strong>Tager City Arc</strong>
+                                    <span>Guardian of ancient secrets.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (2).png" alt="Yun Yun Art">
+                                <div class="gallery-caption">
+                                    <strong>Tager City Arc</strong>
+                                    <span>Mystical aura with divine presence.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (15).jpg" alt="Yun Yun Enigma">
+                                <div class="gallery-caption">
+                                    <strong>Tager City Arc</strong>
+                                    <span>Mystery veiled in cultivator's grace.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (17).jpg" alt="Yun Yun Zenith">
+                                <div class="gallery-caption">
+                                    <strong>Jiama Farewell</strong>
+                                    <span>Peak mastery of cultivation arts.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (4).jpg" alt="Yun Yun Scene">
+                                <div class="gallery-caption">
+                                    <strong>Flower Sect Arc</strong>
+                                    <span>Moment of quiet reflection and wisdom.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (1).jpg" alt="Yun Yun Portrait One">
+                                <div class="gallery-caption">
+                                    <strong>Flower Sect Arc</strong>
+                                    <span>Elegant moment captured in soft light.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (5).jpg" alt="Yun Yun Expression">
+                                <div class="gallery-caption">
+                                    <strong>Flower Sect Arc</strong>
+                                    <span>Resolute focus on cultivation path.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (8).jpg" alt="Yun Yun Battle">
+                                <div class="gallery-caption">
+                                    <strong>Character Art</strong>
+                                    <span>Power channeled with precision.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (9).jpg" alt="Yun Yun Moment">
+                                <div class="gallery-caption">
+                                    <strong>Character Art</strong>
+                                    <span>Journey through realms of cultivation.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (1).webp" alt="Yun Yun Essence">
+                                <div class="gallery-caption">
+                                    <strong>Character Art</strong>
+                                    <span>Inner strength radiating outward.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (14).jpg" alt="Yun Yun Radiance">
+                                <div class="gallery-caption">
+                                    <strong>Character Art</strong>
+                                    <span>Leader of the Flower Sect.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (12).jpg" alt="Yun Yun Elegance">
+                                <div class="gallery-caption">
+                                    <strong>Fan Art</strong>
+                                    <span>Timeless beauty in frozen moment.</span>
+                                </div>
+                            </article>
+                            <article class="gallery-card">
+                                <img src="image/yunzhi (13).jpg" alt="Yun Yun Spirit">
+                                <div class="gallery-caption">
+                                    <strong>Fan Art</strong>
+                                    <span>Rising through trials and tribulations.</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div id="bonus" class="tab-content">
+                        <h3>ជំពូកពិសេស [មានការបកស្រាយសាច់រឿង]</h3>
+                        <h4>ពាក្យសម្ដីនៅក្នុងចិត្តរបស់ អ៊ីន អ៊ីន៖</h4>
+                        <p>បើមិនបានឈានជើងចូលក្នុងទ្វារសំណាក់លោកគ្រូទេ នោះក៏គ្មានការបង្ហាត់បង្រៀនគម្ពីរវិជ្ជាគុនដែរ។<br>ខ្ញុំនៅចាំបានថា កាលដែលខ្ញុំបានចូលរួមជាមួយបក្សពពកអ័ព្ទដំបូង ខ្ញុំនៅជាក្មេងស្រីដ៏ល្ងង់ខ្លៅម្នាក់នៅឡើយ។ ក្រៅពីការហ្វឹកហាត់ ហាក់ដូចជាគ្មានអ្វីអាចទាក់ទាញចំណាប់អារម្មណ៍ខ្ញុំបាននោះទេ។ <br>ខ្ញុំចងចាំរាល់ទងផ្កា រាល់ស្លឹកឈើ រាល់ដុំឥដ្ឋ និងក្បឿងនៃបក្សពពកអ័ព្ទយ៉ាងច្បាស់។ រហូតមកដល់ពេលនេះ ខ្ញុំនៅតែនឹកនាដល់ក្រុមបងប្អូនដែលធ្លាប់សើចសប្បាយ និងលេងជាមួយគ្នានៅលើទីលានហ្វឹកហាត់។<br>លោកគ្រូ អ៊ីន សាន គឺជាមនុស្សដ៏អស្ចារ្យម្នាក់។ គាត់បានបង្រៀនខ្ញុំនូវរឿងរ៉ាវជាច្រើន ប៉ុន្តែគាត់មិនដែលប្រាប់ខ្ញុំពីរបៀបប្រឈមមុខនឹងអារម្មណ៍មនោសញ្ចេតនានោះទេ។<br>ទោះបីជាបក្សពពកអ័ព្ទ មើលទៅហាក់ដូចជាអាក្រក់ខ្លាំងក្នុងកែវភ្នែករបស់អ្នកក៏ដោយ ក៏ខ្ញុំនៅតែស្រឡាញ់ទីកន្លែងនេះ ដែលបានចិញ្ចឹមបីបាច់ និងបង្ហាត់បង្រៀនខ្ញុំ។<br>បើគ្មានលោកគ្រូ និងបក្សពពកអ័ព្ទទេ ខ្ញុំក៏គ្មានអ្វីគ្រប់យ៉ាង កុំថាឡើយដល់ថ្នាក់ក្លាយជាកំពូលអ្នកខ្លាំងទាំងដប់នៅក្នុងនគរជៀម៉ា។<br>សម្រាប់បក្សពពគអ័ព្ទ ខ្ញុំសុខចិត្តលះបង់គ្រប់យ៉ាង រួមទាំងជីវិតខ្ញុំផ្ទាល់។ ទីនេះគឺជាផ្ទះរបស់ខ្ញុំ។ សម្រាប់ផ្ទះ តើមានអ្វីដែលមិនអាចលះបង់បាននោះ?<br>ខ្ញុំមិនដែលចង់បដិសេធក្នុងការធំដឹងក្តីឡើយ ប៉ុន្តែការធំដឹងក្តីបានផ្តល់ឱ្យខ្ញុំនូវការឈឺចាប់ពិតប្រាកដ។ នៅពេលដែលខ្ញុំដឹងថា ខ្ញុំត្រូវតែរៀបការជាមួយមនុស្សដែលខ្ញុំមិនបានស្រឡាញ់ទាល់តែសោះដើម្បីបក្សពពលអ័ព្ទ បេះដូងរបស់ខ្ញុំហាក់ដូចជាត្រូវបានចាក់រាប់ពាន់កាំបិត ហើយវាពិតជាឈឺចាប់ណាស់...<br>ប៉ុន្តែនៅពេលដែលខ្ញុំទទួលតំណែងមេបក្សពពកអ័ព្ទ បន្តពីលោកគ្រូ ខ្ញុំដឹងថាខ្ញុំមិនអាចធ្វើតាមចិត្តខ្លួនឯងទៀតឡើយ។ ខ្ញុំ អ៊ីន អ៊ីន លែងជាក្មេងស្រីដែលរស់នៅយ៉ាងមានសេរីភាពទៀតហើយ ប៉ុន្តែគឺជាមេបក្សជំនាន់ទី ៩ នៃបក្សពពកអ័ព្ទ។<br>ក្នុងនាមជាមេបក្ស ខ្ញុំនឹងមានកូនសិស្សនៅថ្ងៃអនាគត។ នៅពេលដែលខ្ញុំចាស់ពេកមិនអាចការពារបក្សពពកអ័ព្ទបាន ម្នាក់ក្នុងចំណោមពួកគេនឹងទទួលតំណែងមេបក្សបន្តពីខ្ញុំ ដូចដែលលោកគ្រូបានប្រគល់វាឱ្យខ្ញុំដែរ។<br>ទោះជាយ៉ាងណាក៏ដោយ ខ្ញុំមិននឹកស្មានថាបក្សពពកអ័ព្ទ ដែលបានបន្តវេនអស់រយៈពេល ៩ជំនាន់មកហើយនោះ បែរជាត្រូវវិនាសក្នុងកណ្តាប់ដៃរបស់ខ្ញុំ ហើយគឺជាគេទៅវិញដែលជាអ្នករំលាយអាណាចក្រដ៏ធំធេងមួយនេះ។<br>ប្រសិនបើខ្ញុំមិនដែលបានជួបគេ ហើយបន្តរស់នៅតាមជីវិតធម្មតារបស់ខ្ញុំ ខ្ញុំប្រហែលជាមានសេចក្តីសុខជាងនេះ។<br>ប៉ុន្តែការចងចាំទាំងនោះតែងតែលេចឡើងម្តងម្កាល។ ការជួបគេនៅភ្នំសត្វបិសាច ការញ៉ាំត្រីអាំងជាមួយគ្នា ការលួចយកចរណៃពណ៌ស្វាយជាមួយគ្នា និងការរស់នៅជាមួយគ្នា សេចក្តីសុខទាំងនេះក៏ជាអ្វីដែលខ្ញុំមិនដែលបានជួបប្រទះពីមុនមកដែរ។<br>ការនឹកនរណាម្នាក់ ការនឹកនាដល់ពេលវេលាមួយនៃជីវិត មនុស្សមិនគួរលោភលន់ពេកទេ រហូតដល់រំពឹងចង់បានសេចក្តីសុខទ្វេដងបែបនេះ។<br>ប្រសិនបើខ្ញុំពិតជាមិនអាចរត់គេចពីការចាត់ចែងនៃព្រហ្មលិខិតនេះបានទេ នោះមិនថាខ្ញុំជ្រើសរើសផ្លូវណាក៏ដោយ ក៏ខ្ញុំនៅតែត្រូវនៅម្នាក់ឯងសម្លឹងមើលភាពឯកោខ្លួនឯងដដែល។<br>រឿងខ្លះមិនអាចបំភ្លេចបានឡើយ។ មិនថាខ្ញុំព្យាយាមបិទបាំង ឬលុបវាចោលយ៉ាងណាក៏ដោយ ក៏វានឹងកាន់តែចាក់ឫសយ៉ាងជ្រៅទៅវិញ។<br>មនុស្សអ៊ូអរជាច្រើន ហើយមនុស្សជាច្រើនបានងាកក្រោយចាកចេញទៅដោយមិនបានជួបគ្នាទៀតឡើយ។ តាមពិតទៅ ខ្ញុំពិតជាសង្ឃឹមថាគេអាចក្រឡេកមកមើលខ្ញុំម្តងទៀតនៅពេលដែលគេចាកចេញ ដើម្បីឱ្យខ្ញុំអាចរកហេតុផលដើម្បីឃាត់គេទុក។<br>ប៉ុន្តែហេតុផលបានបញ្ឈប់ខ្ញុំ។ ខ្ញុំចង់បញ្ឈប់ការចូលទៅជិតគេ ខណៈដែលអ្វីៗមិនទាន់ហួសពេល។ អ៊ីន ជឺ ដែលមានវត្តមានសម្រាប់តែរូបគេម្នាក់គត់ មិនគួរនៅទីនេះឡើយ។<br>វាគ្រប់គ្រាន់ហើយក្នុងការដែលខ្ញុំធ្វើតាមចិត្តខ្លួនឯងម្តង។ រឿងរ៉ាវដែលខុសពីធម្មតាទាំងនោះ គ្រាន់ជារបស់ អ៊ីន ជឺ នៅក្នុងគ្រានោះតែប៉ុណ្ណោះ<br>ចាប់តាំងពីអ្នកបានចាកចេញទៅហើយ កុំត្រឡប់មកវិញទៀត។<br>ពេលវេលានឹងរំលាយគ្រប់យ៉ាងឱ្យរសាត់បាត់តាមខ្យល់។ ក្តីស្រឡាញ់ ឬក្តីស្អប់ នឹងសាបសូន្យទៅតាមពេលវេលា។ គ្រាន់តែរៀនរស់នៅដោយមិនខ្វល់ពីការឈឺចាប់របស់ខ្លួនឯង នៅក្នុងវាលវដ្តសង្សារដ៏ឈឺចាប់នៃពេលវេលាប៉ុណ្ណោះ។<br>"តើនាងសុខចិត្តត្រឡប់ទៅនគរជៀម៉ា ជាមួយខ្ញុំវិញទេ?"<br>នៅពេលដែលយើងបានជួបគ្នាជាថ្មី ខ្ញុំមិននឹកស្មានថាគេនឹងសួរខ្ញុំនូវសំណួរបែបនេះឡើយ។ ខ្ញុំគិតថាពួកយើងគួរតែបំភ្លេចគ្នាទៅវិញទៅមកជាយូរមកហើយ។<br>តើនេះគឺជាការចាត់ចែងចុងក្រោយនៃព្រហ្មលិខិតមែនទេ?<br>ប្រសិនបើអ្នកនៅតែបន្តគិតដល់វា នោះវានឹងមានការឆ្លើយតប...<br>សៀវ យាន តើអ្នកដឹងទេ?<br>អ្វីដែលខ្ញុំនឹកមិនមែនជានគរជៀម៉ានោះទេ ប៉ុន្តែគឺជាការចងចាំល្អៗទាំងអស់ដែលខ្ញុំធ្លាប់ធ្វើជាមួយអ្នក។</p>
                     </div>
                 </div>
 
@@ -109,6 +270,24 @@
                 link.classList.remove('active');
             });
             document.getElementById('nav-' + sectionId).classList.add('active');
+        }
+
+        function switchTab(event, tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
         }
 
         function openModal() {
