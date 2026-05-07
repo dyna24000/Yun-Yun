@@ -835,6 +835,17 @@ body::before {
     word-break: break-word;
 }
 
+.profile-data-row span a {
+    color: #39ff14;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.profile-data-row span a:hover {
+    color: #39ff14;
+    border-bottom: #39ff14 2px solid;
+}
+
 @media (max-width: 1100px) {
     .tabs-section {
         grid-template-columns: 1fr;
