@@ -374,10 +374,6 @@ body::before {
     transform: translateY(-3px);
 }
 
-.button:active {
-    transform: translateY(-1px);
-}
-
 .button.button-secondary {
     background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(26, 188, 156, 0.1));
     color: #d4af37;
