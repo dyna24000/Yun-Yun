@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" href="image/btth-logo.webp">
 </head>
 <body>
-    <div class="page-shell ">
+    <a class="skip-link" href="#characters">Skip to profile</a>
+    <div class="page-shell">
         <header class="topbar">
             <div class="brand">
                 <img class="brand-logo" src="image/btth-logo.webp" alt="BTTH Logo">
@@ -19,18 +20,23 @@
             </div>
 
             <nav class="nav">
-                <a href="#" onclick="showSection('home')" id="nav-home">HOME</a>
-                <a href="#" onclick="showSection('characters')" id="nav-characters" class="active">CHARACTER</a>
-                <a href="#" onclick="showSection('about')" id="nav-about">ABOUT</a>
+                <a href="#home" data-section="home" id="nav-home">HOME</a>
+                <a href="#characters" data-section="characters" id="nav-characters" class="active" aria-current="page">CHARACTER</a>
+                <a href="#about" data-section="about" id="nav-about">ABOUT</a>
             </nav>
         </header>
 
-        <main class="card">
+        <main class="profile-surface">
             <section id="characters" class="section active">
                 <div class="hero-panel">
                     <div class="hero-copy">
-                        <span class="hero-label">LATEST UPDATE</span>
+                        <span class="hero-label">CHARACTER PROFILE</span>
                         <h1>អ៊ីន អ៊ីន (云韵)</h1>
+                        <div class="hero-badges" aria-label="Character highlights">
+                            <span>ប្រមុខបក្សពពកអ័ព្ទ</span>
+                            <span>បក្សផ្កា</span>
+                            <span>ធាតុខ្យល់</span>
+                        </div>
                         <p class="description">ជាអ្នកដឹកនាំបក្ស ពពកអ័ព្ទ(អ៊ីនឡាន)។ នាងជាអ្នកហាត់គុណខ្លាំង​ពូកែ និងស្រស់ស្អាតម្នាក់ ដែលមានចរិតម៉ឺងម៉ាត់ និងម៉ត់ចត់ ហើយមានទំនួលខុសត្រូវខ្ពស់។</p>
 
                         <div class="stats-grid">
@@ -50,49 +56,56 @@
 
                         <div class="actions">
                             <a class="button" href="ReadMore.html">អានបន្ថែម</a>
+                            <a class="button button-secondary" href="gallery.html">មើលរូបភាព</a>
                         </div>
                     </div>
 
-                    <div class="hero-image">
-                        <a href="image/yunzhi (9).jpg" target="_blank">
-                            <img src="image/yunzhi (9).jpg" alt="Yun Yun" class="character-img">
-                        </a>
+                    <figure class="hero-image">
+                        <img src="image/yunzhi (9).jpg" alt="Yun Yun character portrait" class="character-img" decoding="async">
                         <div class="hero-glow"></div>
-                    </div>
+                    </figure>
                 </div>
 
                 <div class="section-block">
-                    <div class="section-title">
-                        <span>RELATED CHARACTERS</span>
-                    </div>
+                    <h2 class="section-title">RELATED CHARACTERS</h2>
                     <div class="related-characters">
-                        <div class="related-item">
-                            <img src="https://preview.redd.it/major-btth-spoiler-xiao-yan-looks-dope-in-latest-great-v0-tu6hv4bzqmsc1.png?width=767&format=png&auto=webp&s=fabdf20de4301eb0963786bcbb798c3895aa51f5" alt="Xiao Yan" class="related-img">
+                        <article class="related-item">
+                            <img src="https://preview.redd.it/major-btth-spoiler-xiao-yan-looks-dope-in-latest-great-v0-tu6hv4bzqmsc1.png?width=767&format=png&auto=webp&s=fabdf20de4301eb0963786bcbb798c3895aa51f5" alt="Xiao Yan" class="related-img" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                             <div class="related-name">សៀវ យាន</div>
-                        </div>
-                        <div class="related-item">
-                            <img src="https://tse2.mm.bing.net/th/id/OIP.o2eHFs9M0nGAApbuMrTt9wHaIU?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nalan Yanran" class="related-img">
+                        </article>
+                        <article class="related-item">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.o2eHFs9M0nGAApbuMrTt9wHaIU?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nalan Yanran" class="related-img" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                             <div class="related-name">ណាឡាន យានរ៉ាន</div>
-                        </div>
-                        <div class="related-item">
-                            <img src="https://i.pinimg.com/originals/c3/72/f5/c372f534eed318d28846d7f92de23c46.jpg" alt="Yun Shan" class="related-img">
+                        </article>
+                        <article class="related-item">
+                            <img src="https://i.pinimg.com/originals/c3/72/f5/c372f534eed318d28846d7f92de23c46.jpg" alt="Yun Shan" class="related-img" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                             <div class="related-name">អ៊ីន សាន</div>
-                        </div>
-                        <div class="related-item">
-                            <img src="https://wallpapercave.com/wp/wp10716195.jpg" alt="Cai Lin (Medusa)" class="related-img">
+                        </article>
+                        <article class="related-item">
+                            <img src="https://wallpapercave.com/wp/wp10716195.jpg" alt="Cai Lin (Medusa)" class="related-img" loading="lazy" decoding="async" referrerpolicy="no-referrer">
                             <div class="related-name">ឆាយ លីន</div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
 
-            <section id="home" class="section">
-                <p>សូមស្វាគមន៍មកកាន់ ទំព័រជីវប្រវត្តិសង្ខេបនៃតួអង្គក្នុងរឿង ប្រយុទ្ធទៅកាន់មេឃា (Battle Through the Heavens)។ សូមអញ្ជើញអ្នកក្លាហានទាំងអស់មកជួបជាមួយបទពិសោធន៍ថ្មី ក្នុងការស្វែងយល់ឱ្យកាន់តែស៊ីជម្រៅអំពីប្រវត្តិរឿងរ៉ាវលាក់កំបាំង ស្ថិតិសមត្ថភាពប្រយុទ្ធដ៏អស្ចារ្យ ចំណងសម្ព័ន្ធមិត្ត និងចំណុចសំខាន់ៗនៃដំណើរជីវិតរបស់តួឯកស្រីដ៏មានឥទ្ធិពល និងជាទីគោរពបំផុតមួយរូបប្រចាំរឿងភាគតុងហ័រដ៏រំជើបរំជួលមួយនេះ។
-                </p>
+            <section id="home" class="section" aria-hidden="true">
+                <div class="content-panel">
+                    <span class="hero-label">BATTLE THROUGH THE HEAVENS</span>
+                    <h2>ទំព័រជីវប្រវត្តិតួអង្គ</h2>
+                    <p>សូមស្វាគមន៍មកកាន់ ទំព័រជីវប្រវត្តិសង្ខេបនៃតួអង្គក្នុងរឿង ប្រយុទ្ធទៅកាន់មេឃា (Battle Through the Heavens)។ សូមអញ្ជើញអ្នកក្លាហានទាំងអស់មកជួបជាមួយបទពិសោធន៍ថ្មី ក្នុងការស្វែងយល់ឱ្យកាន់តែស៊ីជម្រៅអំពីប្រវត្តិរឿងរ៉ាវលាក់កំបាំង ស្ថិតិសមត្ថភាពប្រយុទ្ធដ៏អស្ចារ្យ ចំណងសម្ព័ន្ធមិត្ត និងចំណុចសំខាន់ៗនៃដំណើរជីវិតរបស់តួឯកស្រីដ៏មានឥទ្ធិពល និងជាទីគោរពបំផុតមួយរូបប្រចាំរឿងភាគតុងហ័រដ៏រំជើបរំជួលមួយនេះ។</p>
+                    <div class="actions">
+                        <a class="button" href="#characters" data-section="characters">ចូលទៅកាន់តួអង្គ</a>
+                    </div>
+                </div>
             </section>
 
-            <section id="about" class="section">
-                <p>នេះគឺជាគេហទំព័រសាមញ្ញមួយអំពីតួអង្គ អ៊ីន អ៊ីន (云韵) ពីរឿង ប្រយុទ្ធទៅកាន់មេឃា (Battle Through the Heavens) ។ គេហទំព័រនេះត្រូវបានបង្កើតឡើងដោយប្រើ HTML, CSS និង JavaScript សុទ្ធសាធ។ សង្ឃឹមថាអ្នកក្លាហានទាំងអស់រីករាយជាមួយវា!</p>
+            <section id="about" class="section" aria-hidden="true">
+                <div class="content-panel">
+                    <span class="hero-label">ABOUT</span>
+                    <h2>អំពីគេហទំព័រ</h2>
+                    <p>នេះគឺជាគេហទំព័រសាមញ្ញមួយអំពីតួអង្គ អ៊ីន អ៊ីន (云韵) ពីរឿង ប្រយុទ្ធទៅកាន់មេឃា (Battle Through the Heavens)។ គេហទំព័រនេះត្រូវបានបង្កើតឡើងដោយប្រើ HTML, CSS និង JavaScript សុទ្ធសាធ។ សង្ឃឹមថាអ្នកក្លាហានទាំងអស់រីករាយជាមួយវា!</p>
+                </div>
             </section>
         </main>
     </div>
